@@ -1,53 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+/* Overwrite default */
+*{
+font-family: "poppins", sans-serif !important;
+box-sizing: border-box;
+}
+
+.col-lg-6{
+    padding: 0 !important;
+}
+
+.dColor{
+    color: #E13B63;
+}
+
+.textSmall .dText{
+    font-size: 24px !important;
+}
+
+body{
+    /* max-width: 1440px; */
+    width: 100vw;
+    clear: both;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.size{
+    max-width: 500px !important;
+}
+
+.bReformat{
+    /* border: 1px solid #E13B63 !important; */
+    background-color: #E13B63;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.span{
+    color: #E13B63; 
+    font-weight: 300;
+}
+
+
+.btn-reformat{
+    border: 1px solid #E13B63 !important;
+    color: #E13B63;
+    font-weight: 600;
+}
+
+.btn-reformat:hover{
+   background-color: #E13B63;
+   color: #ffffff;
+}
+
+.nav-link:hover {
+    color: #E13B63 !important;
+    text-decoration: underline;
+    /* border-bottom: 1px solid #E13B63; */
+    transition: .3s ease-in-out;
+}
+
+.jumbotron img{
+    width: 400px;
+}
+
+.card-body img{
+    width: 60px;
+    height: 60px;
+}
+
+.card-body:hover img{
+   transform: scale(1.1);
+   transition: .3s ease-in-out;
+}
+
+
+/* End of Overwrite default */
+
+
+
 .img10{
-    width: 60%;
+    width:120px;
 }
 
 
 .active{
     color: #E13B63;
-}
-.thirty{
-    margin-left: 200px !important;
-    margin-right: 200px !important;
-}
-
-.thirty ul{
-    margin-left: 200px;
-}
-.thirty ul a{
-    color: white;
-    margin-left: 20px;
-}
-.thirty ul a:hover{
-    color: #E13B63;
-}
-.thirty1{
-    background-image: url(./assets);
-}
-
-.thirty2{
-    padding: 50px 20px ;
-}
-.thirty3{
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    
-    
-}
-
-.thirty6{
-    margin-top: 30px
-}
-.thirty4{
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.img1{
-    width: 100% !important;;
-    height: 600px !important;
 }
 
 .carousel-item .in-obj{
@@ -79,14 +119,22 @@
     color: #ffffff !important;
     padding: 10px 30px !important;
     font-weight: bold;
-    background-color: #162838 !important;
+    background-color: #E13B63 !important;
     outline: none;
     border: 0;
     margin-top: 30px;
     margin-bottom: 30px;
+    border-radius: .2em;
+    transition: .3s ease-in-out;
+}
 
-
-
+.carousel-caption button:hover{
+    border: 1px solid #E13B63;
+    color: #E13B63 !important;
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    font-weight: bolder;
+    transition: .3s ease-in-out;
+    
 }
 
 
@@ -102,8 +150,8 @@
     .thirty6{
         margin-top: 10px
     }
-    
-    
+
+       
 }
 
 @media (min-width:577px) and (max-width:768px){
@@ -131,4 +179,73 @@
         margin-left: 10px;
     }
     
+}
+
+@media(max-width: 768px){
+    .ml-0 img, .separator{
+        display: none !important;
+    }
+}
+
+.textSmall p{
+font-size: 14px !important;
+}
+
+
+/* Get An Appointment Section */
+
+.bGround{
+    background-image: url(../assets/images/homepage/ap.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .form-control{
+    width: 338.35px !important;
+} */
+
+
+/* Carousel Section for small screen viewport */
+
+@media(max-width: 600px){
+    .carousel-item img{
+        height: 300px !important;
+    }
+}
+
+.carousel-item img{
+    height: 600px;
+}
+
+
+@media(max-width: 768px){
+    .card-deck{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-deck .card {
+        margin-bottom: 15px;
+    }
+
+}
+
+.carousel-item img{
+    height: 600px;
+}
+
+
+
+/* footer */
+.footer .btn{
+    border: 0 !important;
+    border-radius: 0;
+}
+
+.footer input{
+    border: 0 !important;
+    border-radius: 0;
 }
